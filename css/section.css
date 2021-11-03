@@ -1,0 +1,14 @@
+.section {
+    color: hsl(180, 32%, 11%);
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section__header {
+    padding: 20px;
+    margin: 0 auto;
+}

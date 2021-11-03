@@ -1,0 +1,44 @@
+.container {
+    overflow: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__cell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.table__header {
+    background-color: #9c4e4e;
+    color: white;
+    font-weight: normal;
+}
+
+.table__caption {
+    caption-side: bottom;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.table__row:nth-child(even) {
+    background: hsl(0, 9%, 74%);
+}
+
+.table__row:hover {
+    background: hsl(0, 0%, 55%);
+}
+
+.table__link {
+    text-decoration: none;
+    color: hsl(180, 32%, 11%);
+}
+
+.table__link:hover {
+    color: black;
+    border-bottom: 1px solid;
+}

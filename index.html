@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierwsze kroki frontendu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/photo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+
+    <header>
+        <h1 class="mainHeader">Witam Cię na mojej pierwszej stronie !</h1>
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a class="navigation__link" href="#o-mnie">O mnie</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#programowanie">Dlaczego programowanie</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#szermierka">Trochę szermierki</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#podróże">Poza sportem…</a>
+            </li>
+        </ul>
+    </nav>
+
+    <p>
+        <button class="buttons js-buttonChange">Zmiana koloru nagłówka</button>
+    </p>
+
+    <main>
+
+        <section class="section">
+            <h2 id="o-mnie" class="section__header">O mnie</h2>
+            <p>Mam na imię <b>Seweryn</b> jestem absolwentem UW, kierunku stosunki międzynarodowe. Głównie z
+                zainteresowania
+                i
+                chęci poszerzania horyzontów. Dodatkową ciekawostką o mnie jest fakt że, od 2003 roku lat trenuję
+                <strong>szermierkę.</strong>
+                Podzielę się z Tobą moją pasją więc przygotuj się na małą dawkę informacji o sporcie.
+            </p>
+            <img class="photo js-photo" src="https://i.postimg.cc/gJBRm46F/fota.jpg" alt="Seweryn Brzozowski">
+
+            <p>
+                <button class="buttons js-buttonPhoto">Usuń zdjęcie</button>
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 id="programowanie" class="section__header">Dlaczego programowanie</h2>
+            <p>
+                Od zawsze chciałem spróbować swoich sił w programowaniu. Nie wiedząc jak i od czego zacząć postanowiłem
+                spróbować swoich sił tutaj, z nadzieją że może stworzy się z tego coś więszkego.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 id="szermierka" class="section__header">Trochę szermierki</h2>
+
+            <p>Nie martw się, nie zamierzam zanudzać Cię teorią tudzież opisywaniem całej szermierki.
+                Przedstawię jedynie najważniejsze różnice oraz zachęce do obejrzenia krótkich filmów z walk na arenie
+                międzyrodowej.
+            </p>
+            <div class="container">
+                <table class="table">
+                    <caption class="table__caption">Specyfika rodzajów broni w szermierce</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="col">Rodzaje broni</th>
+                        <th class="table__cell table__header" scope="col">Specyfika broni</th>
+                        <th class="table__cell table__header" scope="col">Pole trafienia</th>
+                        <th class="table__cell table__header" scope="col">Ciekawe urywki</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">szpada</th>
+                        <td class="table__cell">kolna</td>
+                        <td class="table__cell">całe ciało</td>
+                        <td class="table__cell"><a class="table__link" rel="noreferrer noopener" target="_blank"
+                                href="https://www.youtube.com/watch?v=b68b-E2UwL4">Highlihts w szpadzie (otwiera się w
+                                nowym oknie)</a></td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">szabla</th>
+                        <td class="table__cell">sieczna</td>
+                        <td class="table__cell">od pasa w góre</td>
+                        <td class="table__cell"><a class="table__link" rel="noreferrer noopener" target="_blank"
+                                href="https://www.youtube.com/watch?v=o6CoxbvaxjU">Highlihts w szabli(otwiera się w
+                                nowym oknie)</a></td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">floret</th>
+                        <td class="table__cell">kolna</td>
+                        <td class="table__cell">korpus</td>
+                        <td class="table__cell"><a class="table__link" rel="noreferrer noopener" target="_blank"
+                                href="https://www.youtube.com/watch?v=eS8TaPUAbLI">Highlihts we florecie(otwiera się w
+                                nowym oknie)</a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>Czy uda Ci się odgadnąć w której broni się pojedynkuję na zdjęciu ?</h3>
+            <p>
+                <img class="photoFencing" src="https://i.postimg.cc/Wb0w8TFf/jakas-fota.jpg" alt="Walka">
+            </p>
+            <p>
+                <button class="buttons buttons--quiz js-buttonFoil"><span class="js-foil">Floret</span></button>
+                <button class="buttons buttons--quiz js-buttonEpee"><span class="js-epee">Szpada</span></button>
+                <button class="buttons buttons--quiz js-buttonSabre"><span class="js-sabre">Szabla</span></button>
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 id="podróże" class="section__header">Podróże</h2>
+            <p>Aby nie zandzić i trochę odbiec od tematu szermierki.. i w ramach ćwiczeń🙈</p>
+            <ol>
+                <li class="list__header">Lista krajów odwiedzonych:
+                    <ul class="list">
+                        <li class="list__item">Grecja</li>
+                        <li class="list__item">Chorwacja</li>
+                        <li class="list__item">Hiszpania</li>
+                        <li class="list__item">Włochy</li>
+                        <li class="list__item">Francja</li>
+                        <li class="list__item">Gruzja</li>
+                        <li class="list__item">Finlandia</li>
+                        <li class="list__item">Dania</li>
+                        <li class="list__item">Szwecja</li>
+                        <li class="list__item">I jeszcze trochę... tak, głównie Europa...</li>
+                    </ul>
+                </li>
+                <li class="list__header">Lista miejsc które chciałbym odwiedzić:
+                    <ul class="list">
+                        <li class="list__item">USA</li>
+                        <li class="list__item">Japonia</li>
+                        <li class="list__item">Portugalia</li>
+                        <li class="list__item">Madagaskar</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="footer">Powered by © Seweryn Brzozowski 2021</footer>
+
+</body>
+
+</html>
