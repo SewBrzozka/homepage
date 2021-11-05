@@ -1,47 +1,57 @@
-function welcome () {
-    console.log("Cześć! Miło mi Cię tu powitać!");
-}
-
-welcome();
-
 {
-    let buttonChangeHeader = document.querySelector(".js-buttonChange");
-    let header = document.querySelector(".mainHeader");
-    
-    buttonChangeHeader.addEventListener("click", () => {
+    const welcome = () => {
+        console.log("Cześć! Miło mi Cię tu powitać!");
+    };
+
+    const toggleHeader = () => {
+        const header = document.querySelector(".mainHeader");
         header.classList.toggle("headerChange");
-    })
-    
-    let buttonPhoto = document.querySelector(".js-buttonPhoto");
-    let photo = document.querySelector(".js-photo");
-    
-    buttonPhoto.addEventListener("click", () => {
+    };
+
+    const offPhoto = () => {
+        const photo = document.querySelector(".js-photo");
         photo.remove();
-    })
+    };
+
+    const quizFirst = () => {
+        const quizFolseFirst = document.querySelector(".js-foil");
+        const quizButtonFirst = document.querySelector(".js-buttonFoil");
+        quizButtonFirst.classList.toggle("buttonFalse");
+
+        quizFolseFirst.innerText = quizButtonFirst.classList.contains("buttonFalse") ? "PUDŁO !" : "Floret";
+    };
+
+    const quizSecond = () => {
+        const quizTrue = document.querySelector(".js-epee");
+        const quizButtonSecond = document.querySelector(".js-buttonEpee");
+        quizButtonSecond.classList.toggle("buttonTrue");
+
+        quizTrue.innerText = quizButtonSecond.classList.contains("buttonTrue") ? "BINGO ! 😃👍" : "Szpada";
+    };
+
+    const quizThird = () => {
+        const quizFolseSecond = document.querySelector(".js-sabre");
+        const quizButtonThird = document.querySelector(".js-buttonSabre");
+        quizButtonThird.classList.toggle("buttonFalse");
+
+        quizFolseSecond.innerText = quizButtonThird.classList.contains("buttonFalse") ? "PUDŁO !" : "Szabla";
+    };
+
+    const init = () => {
+        const buttonChangeHeader = document.querySelector(".js-buttonChange");
+        const buttonPhoto = document.querySelector(".js-buttonPhoto");
+        const quizButtonFirst = document.querySelector(".js-buttonFoil");
+        const quizButtonSecond = document.querySelector(".js-buttonEpee");
+        const quizButtonThird = document.querySelector(".js-buttonSabre");
+
+        quizButtonFirst.addEventListener("click", quizFirst);
+        quizButtonSecond.addEventListener("click", quizSecond);
+        quizButtonThird.addEventListener("click", quizThird);
+        buttonChangeHeader.addEventListener("click", toggleHeader);
+        buttonPhoto.addEventListener("click", offPhoto);
+
+        welcome();
+    };
+
+    init();
 }
-
-let buttonEpee = document.querySelector(".js-buttonEpee");
-let buttonFoil = document.querySelector(".js-buttonFoil");
-let buttonSabre = document.querySelector(".js-buttonSabre");
-let sabre = document.querySelector(".js-sabre");
-let foil = document.querySelector(".js-foil");
-let epee = document.querySelector(".js-epee");
-
-buttonEpee.addEventListener("click", () => {
-    buttonEpee.classList.toggle("buttonTrue");
-
-    epee.innerText = buttonEpee.classList.contains("buttonTrue") ? "BINGO ! 😃👍" : "Szpada";
-});
-
-buttonFoil.addEventListener("click", () => {
-    buttonFoil.classList.toggle("buttonFalse");
-
-    foil.innerText = buttonFoil.classList.contains("buttonFalse") ? "PUDŁO !" : "Floret";
-});
-
-buttonSabre.addEventListener("click", () => {
-    buttonSabre.classList.toggle("buttonFalse");
-
-    sabre.innerText = buttonSabre.classList.contains("buttonFalse") ? "PUDŁO !" : "Szabla";
-});
-
