@@ -1,4 +1,8 @@
-console.log("Cześć! ");
+function welcome () {
+    console.log("Cześć! Miło mi Cię tu powitać!");
+}
+
+welcome();
 
 {
     let buttonChangeHeader = document.querySelector(".js-buttonChange");
