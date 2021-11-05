@@ -9,7 +9,7 @@
     font-size: 1.8;
 }
 
-.buttons:hover {
+.buttons--special:hover{
     background-color: hsl(180, 1%, 74%);
     
 }
