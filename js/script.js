@@ -10,7 +10,9 @@
 
     const offPhoto = () => {
         const photo = document.querySelector(".js-photo");
+        const buttonPhoto = document.querySelector(".js-buttonPhoto");
         photo.remove();
+        buttonPhoto.remove();
     };
 
     const quizFirst = () => {
